@@ -1,0 +1,16 @@
+<h1> All Posts about Fta <h1>
+
+    <ul>
+
+      <% @posts.each do |p| %>
+      
+        <li>
+        <%= link_to "#{p.title} : #{p.content}", post_path(p) %>
+        <%= link_to "edit", edit_post_path(p) %>
+        <%= link_to "delete", post_path(p), method: :delete %>
+        </li>
+      <%end%>
+
+      <%= link_to "새로 만들기", new_post_path %>
+
+  </ul>

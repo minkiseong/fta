@@ -1,0 +1,21 @@
+<h1>Edit page</h1>
+
+<%= form_for :a, url: post_path, method: :patch do |f| %>
+
+
+  <div>
+    <%= f.label :제목 %>
+    <%= f.text_field :b %>
+  </div>
+
+  <div>
+    <%= f.label :내용 %>
+    <%= f.text_area :c %>
+  </div>
+
+  <div>
+    <%= f.submit "edit" %>
+  </div>
+
+<% end %>
+

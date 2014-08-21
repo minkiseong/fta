@@ -1,0 +1,19 @@
+<h1>New Post<h1>
+
+
+    <%= form_for :a, url:posts_path  do |f| %>
+      <div>
+        <%= f.label :제목 %>
+        <%= f.text_field :b %>
+      </div>
+
+      <div>
+        <%= f.label :내용  %>
+        <%= f.text_area :c %>
+      </div>
+
+      <div>
+        <%= f.submit "publish" %>
+      </div>
+
+    <% end %>
